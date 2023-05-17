@@ -1,0 +1,53 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "The Beast",
+            "is_spawnable": true,
+            "is_summonable": true
+        },
+        "components": {
+            "minecraft:physics": {},
+            "minecraft:movement": {
+                "value": 0.5
+            },
+            "minecraft:despawn":{
+                "despawn_from_chance": false,
+                "despawn_from_inactivity": false
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0,
+                "breathes_air": true,
+                "breathes_water": true
+            },
+            "minecraft:navigation.generic": {
+                "is_amphibious": true,
+                "can_path_over_water": false,
+                "can_swim": true,
+                "can_walk": true,
+                "can_breach": true,
+                "can_sink": false
+            },
+            "minecraft:health": {
+                "value": 5000,
+                "max": 5000
+              },
+            "minecraft:behavior.tempt": {
+                "priority": 1,
+                "speed_multiplier": 1.4,
+                "items": ["diamond"],
+                "within_radius": 7.0
+            },
+            "minecraft:behavior.random_stroll":
+            {
+                "priority": 0
+            },
+            "minecraft:experience_reward": {
+                "on_death": 6000
+            }
+        }
+    }
+}
