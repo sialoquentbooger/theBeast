@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "The Beast",
+            "spawn_egg": {
+                "base_color": "#505152",
+                "overlay_color": "#3b9dff"
+            }
+        }
+    }
+}
